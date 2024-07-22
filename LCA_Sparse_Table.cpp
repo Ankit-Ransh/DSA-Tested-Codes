@@ -11,6 +11,8 @@ private:
    vector<vector<int>> sparseTable;
 
 public:
+
+   // can handle N -> 2e5, increase it as N increases
    const int LOG = 20;
    LCA(int n, vector<int> adj[], int root = 1) {
       first = vector<int> (n, 0);
